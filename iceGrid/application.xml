@@ -1,0 +1,13 @@
+<icegrid>
+    <application name="Simple">
+        <node name="node1">
+            <server id="SimpleServer" exe="java" activation="on-demand">
+                <option>-jar</option>
+                <option>../server/build/libs/server.jar</option>
+                <adapter name="Printer" endpoints="default -h localhost">
+                    <object identity="Printer" type="::Demo::Printer" property="Identity"/>
+                </adapter>
+            </server>
+        </node>
+    </application>
+</icegrid>

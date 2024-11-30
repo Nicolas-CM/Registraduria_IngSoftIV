@@ -1,0 +1,18 @@
+IceGrid.InstanceName=DemoIceGrid
+
+IceGrid.Registry.Client.Endpoints=default -h localhost -p 4061
+IceGrid.Registry.Server.Endpoints=default -h localhost -p 4062
+IceGrid.Registry.Internal.Endpoints=default -h localhost -p 4063
+IceGrid.Registry.AdminPermissionsVerifier=DemoIceGrid/NullPermissionsVerifier
+
+IceGrid.Registry.LMDB.Path=db/registry
+IceGrid.Registry.Discovery.Interface=127.0.0.1
+
+Ice.Default.Locator=DemoIceGrid/Locator:default -h localhost -p 4061
+
+IceGrid.Node.Name=node1
+IceGrid.Node.Endpoints=default -h localhost -p 4064
+IceGrid.Node.Data=db/node
+IceGrid.Node.CollocateRegistry=1
+#IceGrid.Node.Output=db
+#IceGrid.Node.RedirectErrToOut=1

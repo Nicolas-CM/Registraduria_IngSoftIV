@@ -1,0 +1,12 @@
+# Configuration file (11/29/24 22:50:11.504)
+
+# Server configuration
+Ice.Admin.ServerId=SimpleServer
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=SimpleServer
+# Object adapter Printer
+Printer.Endpoints=default -h localhost
+Printer.AdapterId=SimpleServer.Printer
+# Server descriptor properties
+Identity=Printer
+Ice.Default.Locator=DemoIceGrid/Locator:default -h localhost -p 4061
